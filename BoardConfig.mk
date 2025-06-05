@@ -9,6 +9,7 @@ DEVICE_PATH := device/xiaomi/agate
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
@@ -19,6 +20,7 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor \
     vbmeta_system \
     product
+
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
