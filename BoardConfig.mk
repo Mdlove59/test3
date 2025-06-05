@@ -1,4 +1,4 @@
-a#
+#
 # Copyright (C) 2025 The Android Open Source Project
 # Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
 #
@@ -19,7 +19,6 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor \
     vbmeta_system \
     product
-
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
