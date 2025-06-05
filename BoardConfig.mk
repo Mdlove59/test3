@@ -83,8 +83,9 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
-BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system vendor vendor product product system_ext
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product system_ext
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
+BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6893
@@ -109,7 +110,6 @@ PLATFORM_VERSION := 16.1.0
 # TWRP Configuration
 TW_LOAD_VENDOR_MODULES := "fts_touch_spi.ko xiaomi_touch.ko"
 TW_THEME := portrait_hdpi
-TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
@@ -131,7 +131,7 @@ TW_NO_FASTBOOT_BOOT := true
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-
+TARGET_NO_RECOVERY := true
 # Statusbar icons flags
 TW_STATUS_ICONS_ALIGN := center
 TW_CUSTOM_CPU_POS := 50

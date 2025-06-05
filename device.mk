@@ -8,6 +8,7 @@
 LOCAL_PATH := device/xiaomi/agate
 
 ALLOW_MISSING_DEPENDENCIES := true
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
